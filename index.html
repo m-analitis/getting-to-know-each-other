@@ -4,27 +4,87 @@
     <meta charset="UTF-8">
     <title>Michael</title>
     <style>
-      ul {list-style-type: square}
+      body {
+        background-color:rgb(10, 190, 91);
+        font-family:Arial, Helvetica, sans-serif;
+        margin:0;
+      }
+      .main-content {
+        width:80%;
+        margin:auto;
+        overflow:hidden;
+        padding:10px;
+      }
+      ul {
+        list-style-type: square;
+      }
+      img {
+        width:400px;
+        height:auto;
+        display:block;
+        margin:auto;
+        border-radius:20%;
+      }
+      .main-header {
+        background-color:rgb(5, 87, 9);
+        color:white;
+        padding:10px;
+        position:relative;
+        left:0px;
+        top:0px;
+        text-align:center;
+      }
+      .main-header a:link {
+        color:rgb(0, 255, 0);
+      }
+      .content {
+        background-color: white;
+        padding:10px;
+        border-radius:5px;
+        margin-bottom:10px;
+      }
+      .image {
+        margin-bottom:10px;
+      }
     </style>
   </head>
   <body>
-    <h1>Michael Analitis's Introduction Website</h1>
-    <p>Email: <a href="mailto:michaeltanalitis@lewisu.edu">michaeltanalitis@lewisu.edu</a></p>
-    <p>Discord: m.analitis</p>
-    <img src="me-800-by-800.jpg" alt="An image of me.">
-    <h2>Introduction</h2>
-    <p>[paragraph]</p>
-		<h2>What I Hope To Learn In This Course</h2>
-    <ul>
-      <li>[list item]</li>
-      <li>[list item]</li>
-    </ul>
-    <h2>My Favorite Hobby / Activity</h2>
-    <ul>
-      <li>[list item]</li>
-      <li>[list item]</li>
-    </ul>
-    <h2>Fun Fact</h2>
-    <p>[fun fact]</p>
+    <header class="main-header">
+      <h1>Michael Analitis’s Introduction Website</h1>
+      <p>Email: <a href="mailto:michaeltanalitis@lewisu.edu"><b>michaeltanalitis@lewisu.edu</b></a></p>
+      <p>Discord: <b>m.analitis</b></p>
+    </header>
+    <div class="main-content">
+      <div class=image>
+        <img src="me-800-by-800.jpg" alt="An image of me.">
+      </div>
+      <div class="content" id="intro">
+        <h2>Introduction</h2>
+        <p>My name is Michael Analitis. My major is Computer Science and my minor is Mathematics. This is my third year at Lewis, and I plan to graduate at the end of next semester.
+          I’ve had an interest in technology throughout my whole life. When I was a kid, I wanted to be a computer technician because my mom used to be one before my younger sister and I were born.
+          Now, I’m more interested in becoming a software developer because I enjoy programming.
+        </p>
+      </div>
+      <div class="content" id="course">
+        <h2>What I Hope To Learn In This Course</h2>
+        <ul>
+          <li>How the software engineering process works</li>
+          <li>How to develop software as part of a team</li>
+          <li>Good practices for designing effective software</li>
+        </ul>
+      </div>
+      <div class="content" id="hobbies">
+        <h2>My Favorite Hobbies / Activities</h2>
+        <ul>
+          <li>Playing video games (mostly <a href="https://en.wikipedia.org/wiki/Roguelike">roguelikes/roguelites</a> and puzzle games)</li>
+          <li>Making music</li>
+          <li>Solving crossword puzzles (Solving <a href="https://www.puzzmo.com/today">Puzzmo’s</a> mid-sized crossword puzzles is part of my daily routine.)</li>
+        </ul>
+      </div>
+      <div class="content" id="fun-fact">
+        <h2>Fun Fact</h2>
+        <p>I played percussion in concert band from 5th grade until the end of high school.</p>
+      </div>
+    </div>
   </body>
 </html>
